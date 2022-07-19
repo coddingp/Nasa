@@ -92,17 +92,9 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="0dp">
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:orientation="vertical">
+
 
         <GridLayout
             android:layout_width="match_parent"
@@ -129,7 +121,7 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="172dp"
-                    android:layout_height="220dp"
+                    android:layout_height="160dp"
                     android:layout_marginVertical="4dp"
                     android:layout_marginEnd="16dp"
                     android:layout_weight="1"
@@ -139,7 +131,7 @@
                     <ImageView
                         android:id="@+id/curiosityMainImageView"
                         android:layout_width="172dp"
-                        android:layout_height="220dp"
+                        android:layout_height="160dp"
                         android:layout_gravity="center"
                         android:layout_margin="4dp"
                         android:layout_weight="1"
@@ -153,64 +145,9 @@
                     android:id="@+id/curiosityMainTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity=""
                     android:layout_marginVertical="2dp"
                     android:text="@string/curiosity_rover_pictures"
-                    android:textColor="@color/black" />
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="172dp"
-                    android:layout_height="220dp"
-                    android:layout_marginVertical="4dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/black"
-                    app:cardCornerRadius="4dp">
-
-                    <ImageView
-                        android:id="@+id/earthMainImageView"
-                        android:layout_width="172dp"
-                        android:layout_height="220dp"
-                        android:layout_gravity="center"
-                        android:layout_marginHorizontal="4dp"
-                        android:layout_marginVertical="16dp"
-                        android:contentDescription="@string/earth_main_image"
-                        android:src="@drawable/setallite_earth_image" />
-                </androidx.cardview.widget.CardView>
-
-                <TextView
-                    android:id="@+id/EarthMainTextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginVertical="2dp"
-                    android:text="@string/earth_data"
-                    android:textColor="@color/black" />
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="172dp"
-                    android:layout_height="220dp"
-                    android:layout_marginVertical="4dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/black"
-                    app:cardCornerRadius="4dp">
-
-                    <ImageView
-                        android:id="@+id/meteorites_main_image_view"
-                        android:layout_width="172dp"
-                        android:layout_height="220dp"
-                        android:layout_gravity="center"
-                        android:layout_marginHorizontal="4dp"
-                        android:layout_marginVertical="16dp"
-                        android:contentDescription="@string/meteorites_image"
-                        android:src="@drawable/meteorite_image" />
-                </androidx.cardview.widget.CardView>
-
-                <TextView
-                    android:id="@+id/EarthMainTextView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginVertical="2dp"
-                    android:text="@string/meteorites"
                     android:textColor="@color/black" />
             </LinearLayout>
 
@@ -229,7 +166,7 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="172dp"
-                    android:layout_height="220dp"
+                    android:layout_height="160dp"
                     android:layout_marginVertical="4dp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/black"
@@ -238,13 +175,13 @@
                     <ImageView
                         android:id="@+id/nasaMainImageView"
                         android:layout_width="172dp"
-                        android:layout_height="220dp"
+                        android:layout_height="160dp"
                         android:layout_gravity="center"
                         android:layout_margin="4dp"
                         android:layout_weight="1"
                         android:contentDescription="@string/nasa_news_information"
-                        android:scaleX="1.2"
-                        android:scaleY="1.2"
+                        android:scaleX="1.1"
+                        android:scaleY="1.1"
                         android:src="@drawable/nasa_news_image" />
                 </androidx.cardview.widget.CardView>
 
@@ -255,64 +192,43 @@
                     android:layout_marginVertical="2dp"
                     android:text="@string/nasa_online"
                     android:textColor="@color/black" />
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="172dp"
-                    android:layout_height="220dp"
-                    android:layout_marginVertical="4dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/black"
-                    app:cardCornerRadius="4dp">
-
-                    <ImageView
-                        android:id="@+id/mars_main_image_view"
-                        android:layout_width="172dp"
-                        android:layout_height="220dp"
-                        android:layout_gravity="center"
-                        android:layout_margin="4dp"
-                        android:contentDescription="@string/mars_data_image"
-                        android:src="@drawable/mars_weather_image" />
-                </androidx.cardview.widget.CardView>
-
-                <TextView
-                    android:id="@+id/MarsMainTextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginVertical="2dp"
-                    android:text="@string/mars_weather"
-                    android:textColor="@color/black" />
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="172dp"
-                    android:layout_height="220dp"
-                    android:layout_marginVertical="4dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/black"
-                    app:cardCornerRadius="4dp">
-
-                    <ImageView
-                        android:id="@+id/moon_main_image_view"
-                        android:layout_width="172dp"
-                        android:layout_height="220dp"
-                        android:layout_gravity="center"
-                        android:layout_marginHorizontal="4dp"
-                        android:layout_marginVertical="16dp"
-                        android:contentDescription="@string/moon_menu_main_image"
-                        android:src="@drawable/moon_image" />
-                </androidx.cardview.widget.CardView>
-
-                <TextView
-                    android:id="@+id/MoonMainTextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginVertical="2dp"
-                    android:text="@string/moon"
-                    android:textColor="@color/black" />
             </LinearLayout>
-
         </GridLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="212dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/black"
+            app:cardCornerRadius="4dp">
+
+            <ImageView
+                android:id="@+id/earthMainImageView"
+                android:layout_width="match_parent"
+                android:layout_height="212dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:contentDescription="@string/earth_main_image"
+                android:src="@drawable/setallite_earth_image" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/EarthMainTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="2dp"
+            android:text="@string/earth_video_from_iss"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
     </LinearLayout>
 
 </LinearLayout>

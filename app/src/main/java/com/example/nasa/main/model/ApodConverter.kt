@@ -7,7 +7,7 @@ object ApodConverter {
     fun fromNetWork(response: ApodResponse) =
         ApodData(
             copyright = response?.copyright,
-            date = response?.date,
+            date = response.date,
             explanation = response?.explanation,
             hdurl = response?.hdurl,
             mediaType = response?.mediaType,

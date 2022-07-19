@@ -6,7 +6,7 @@ data class ApodResponse(
     @SerializedName("copyright")
     val copyright: String?,
     @SerializedName("date")
-    val date: String?,
+    val date: String,
     @SerializedName("explanation")
     val explanation: String?,
     @SerializedName("hdurl")

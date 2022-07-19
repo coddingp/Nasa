@@ -6,7 +6,7 @@ import kotlinx.parcelize.Parcelize
 @Parcelize
 data class ApodData(
     val copyright: String?,
-    val date: String?,
+    val date: String,
     val explanation: String?,
     val hdurl: String?,
     val mediaType: String?,

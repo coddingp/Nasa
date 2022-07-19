@@ -34,6 +34,5 @@ class EarthFragment : BaseFragment(R.layout.fragment_radio) {
                 youTubePlayer.loadVideo(videoId, 0f)
             }
         })
-
     }
 }

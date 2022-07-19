@@ -60,18 +60,6 @@ class MainScreenFragment : BaseFragment(R.layout.main_screen), MainContract, Mai
                 changeFragment(EarthFragment(), R.id.contentContainer)
             }
 
-            marsMainImageView?.setOnClickListener {
-                changeFragment(RoverFragment(), R.id.contentContainer)
-            }
-
-            meteoritesMainImageView?.setOnClickListener {
-                changeFragment(RoverFragment(), R.id.contentContainer)
-            }
-
-            moonMainImageView?.setOnClickListener {
-                changeFragment(RoverFragment(), R.id.contentContainer)
-            }
-
             apodMainImageView?.setOnClickListener {
                 changeFragment(ApodListFragment(), R.id.contentContainer)
             }

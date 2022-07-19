@@ -9,8 +9,8 @@
         android:id="@+id/roverRecycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".rover.ui.RoverFragment"
         android:layout_marginHorizontal="2dp"
+        tools:context=".rover.ui.RoverFragment"
         tools:ignore="MissingConstraints"
         tools:listitem="@layout/rover_item" />
 
