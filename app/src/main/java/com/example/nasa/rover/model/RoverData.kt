@@ -23,16 +23,16 @@ sealed class RoverData : Parcelable {
     data class CuriosityCamera(
         val id: Int,
         val name: String,
-        val rover_id: Int,
-        val full_name: String
+        val roverId: Int,
+        val fullName: String
     ) : RoverData()
 
     @Parcelize
     data class Rover(
         val id: Int,
         val name: String,
-        val landing_date: String,
-        val launch_date: String,
+        val landingDate: String,
+        val launchDate: String,
         val status: String
     ) : RoverData()
 

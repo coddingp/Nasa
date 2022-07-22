@@ -17,6 +17,7 @@ object MainModule {
             Room.databaseBuilder(get(), AppDataBase::class.java, "main_data")
                 .build()
         }
+
         single { MainPresenter(get()) } bind MainContract.Presenter::class
 
         single { get<AppDataBase>().mainDao() }
