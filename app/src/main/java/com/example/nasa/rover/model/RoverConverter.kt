@@ -22,16 +22,16 @@ object RoverConverter {
         RoverData.CuriosityCamera(
             id = response.id,
             name = response.name,
-            rover_id = response.roverId,
-            full_name = response.fullName
+            roverId = response.roverId,
+            fullName = response.fullName
         )
 
     private fun fromNetWork(response: RoverResponse): RoverData.Rover =
         RoverData.Rover(
             id = response.id,
             name = response.name,
-            landing_date = response.landingDate,
-            launch_date = response.launchDate,
+            landingDate = response.landingDate,
+            launchDate = response.launchDate,
             status = response.status
         )
 }

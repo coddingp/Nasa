@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/apodImageView"
         android:layout_width="match_parent"
-        android:layout_height="160dp"
+        android:layout_height="240dp"
         android:layout_gravity="center"
         android:contentDescription="@string/astranomic_picture_of_the_day"
         android:scaleType="centerCrop"

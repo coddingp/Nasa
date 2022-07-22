@@ -21,7 +21,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="4dp"
             android:layout_weight="1"
-            app:cardCornerRadius="4dp">
+            app:cardCornerRadius="8dp">
 
             <EditText
                 android:id="@+id/userQueryEditText"
@@ -64,7 +64,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="4dp">
+        app:cardCornerRadius="8dp">
 
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -117,7 +117,8 @@
                     android:layout_gravity="start"
                     android:backgroundTint="@color/black"
                     android:text="@string/start_date"
-                    android:textSize="12sp" />
+                    android:textSize="12sp"
+                    app:cardCornerRadius="8dp" />
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="172dp"
@@ -126,7 +127,7 @@
                     android:layout_marginEnd="16dp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/black"
-                    app:cardCornerRadius="4dp">
+                    app:cardCornerRadius="8dp">
 
                     <ImageView
                         android:id="@+id/curiosityMainImageView"
@@ -162,7 +163,8 @@
                     android:layout_height="40sp"
                     android:backgroundTint="@color/black"
                     android:text="@string/end_date"
-                    android:textSize="12sp" />
+                    android:textSize="12sp"
+                    app:cardCornerRadius="8dp" />
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="172dp"
@@ -170,7 +172,7 @@
                     android:layout_marginVertical="4dp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/black"
-                    app:cardCornerRadius="4dp">
+                    app:cardCornerRadius="8dp">
 
                     <ImageView
                         android:id="@+id/nasaMainImageView"
@@ -207,15 +209,15 @@
             android:layout_height="212dp"
             android:layout_gravity="center"
             android:backgroundTint="@color/black"
-            app:cardCornerRadius="4dp">
+            app:cardCornerRadius="8dp">
 
             <ImageView
                 android:id="@+id/earthMainImageView"
                 android:layout_width="match_parent"
                 android:layout_height="212dp"
-                android:scaleType="centerCrop"
                 android:layout_gravity="center"
                 android:contentDescription="@string/earth_main_image"
+                android:scaleType="centerCrop"
                 android:src="@drawable/setallite_earth_image" />
         </androidx.cardview.widget.CardView>
 

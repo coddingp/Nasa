@@ -27,7 +27,7 @@ class RoverRecyclerViewHolder(
         with(binding) {
             Glide.with(itemView.context).asBitmap().override(600, 600).load(item.imgSrc)
                 .placeholder(R.drawable.landscape_placeholder).into(roverImageView1)
-            roverTextView1.text = item.camera.full_name
+            roverTextView1.text = item.camera.fullName
             Timber.i("Data: $item")
             itemView.setOnClickListener {
                 onClick.invoke(item)

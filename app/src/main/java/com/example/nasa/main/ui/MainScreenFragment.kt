@@ -46,6 +46,7 @@ class MainScreenFragment : BaseFragment(R.layout.main_screen), MainContract, Mai
         super.onViewCreated(view, savedInstanceState)
         presenter.attach(this@MainScreenFragment)
         presenter.getApodData()
+//        presenter.collectFlowApodData()
 
         with(binding) {
             curiosityMainImageView?.setOnClickListener {
@@ -101,6 +102,10 @@ class MainScreenFragment : BaseFragment(R.layout.main_screen), MainContract, Mai
         val sdf = SimpleDateFormat(myFormat, Locale.UK)
         endDate = sdf.format((calendar.time))
         binding.endDateButton?.text = "< " + sdf.format((calendar.time)) + " \uD83D\uDDD3 >"
+    }
+
+    override fun showRefreshing(isRefreshing: Boolean) {
+
     }
 
     override fun showApodData(apodData: ApodData) {
@@ -161,5 +166,9 @@ class MainScreenFragment : BaseFragment(R.layout.main_screen), MainContract, Mai
                 mainApodProgressBar?.visibility = View.GONE
             }, 300)
         }
+    }
+
+    override fun failure(t: Throwable) {
+
     }
 }

@@ -7,10 +7,14 @@ import com.example.nasa.main.model.ApodData
 
 interface MainContract : BaseFragmentContract {
     interface View : MvpView {
+        fun showRefreshing(isRefreshing: Boolean)
         fun showApodData(apodData: ApodData)
+        fun failure(t: Throwable)
     }
 
     interface Presenter : MvpPresenter<View> {
+        fun refresh()
         fun getApodData()
+        fun collectFlowApodData()
     }
 }
