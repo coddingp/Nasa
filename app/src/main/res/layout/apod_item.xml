@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_400"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/apodImageView"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/astranomic_picture_of_the_day"
+        android:scaleType="centerCrop"
+        android:src="@drawable/galactic_image" />
+
+    <TextView
+        android:id="@+id/apodTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginVertical="8dp"
+        android:text="Picture of the day made in Kyrgyzstan"
+        android:textColor="@color/black" />
+
+</LinearLayout>

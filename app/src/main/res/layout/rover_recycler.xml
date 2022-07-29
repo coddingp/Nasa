@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_400"
+    android:padding="12dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/roverRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="2dp"
+        tools:context=".rover.ui.RoverFragment"
+        tools:ignore="MissingConstraints"
+        tools:listitem="@layout/rover_item" />
+
+    <ProgressBar
+        android:id="@+id/roverRecyclerProgressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>
