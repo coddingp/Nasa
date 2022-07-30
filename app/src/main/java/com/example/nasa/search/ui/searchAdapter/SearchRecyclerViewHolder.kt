@@ -26,7 +26,6 @@ class SearchRecyclerViewHolder(
 
     fun bind(textData: SearchData.ItemParsed) {
         with(binding) {
-
             if (textData.link?.get(0)?.href != null && textData.link.get(0)?.href != "" && textData.data?.get(
                     0
                 )?.description != null && textData.data?.get(0)?.description != ""

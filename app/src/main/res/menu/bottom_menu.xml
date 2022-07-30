@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/home"
+        android:id="@+id/video"
         android:icon="@drawable/ic_video"
         android:title="Video" />
 
     <item
-        android:id="@+id/settings"
+        android:id="@+id/radio"
         android:icon="@drawable/ic_radio"
         android:title="Radio" />
 </menu>

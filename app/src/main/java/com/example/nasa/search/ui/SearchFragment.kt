@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.nasa.R
 import com.example.nasa.common.mvp.BaseFragmentMvp
 import com.example.nasa.databinding.SearchRecyclerBinding
-import com.example.nasa.rover.ui.RoverScrollListener
 import com.example.nasa.search.model.SearchData
 import com.example.nasa.search.ui.searchAdapter.SearchRecyclerAdapter
 import org.koin.android.ext.android.inject
@@ -40,14 +39,14 @@ class SearchFragment :
         super.onViewCreated(view, savedInstanceState)
         searchRecycler?.layoutManager = LinearLayoutManager(requireContext())
         searchRecycler?.adapter = searchAdapter
-        presenter.getSearchDataToDb(1)
+        presenter.getSearchData(1)
 
         searchRecycler.run {
             layoutManager = LinearLayoutManager(requireContext())
             adapter = searchAdapter
             addOnScrollListener(SearchScrollListener(
                 layoutManager as LinearLayoutManager,
-                loadNextPage = { presenter.getSearchDataToDb(it) }
+                loadNextPage = { presenter.getSearchData(it) }
             ))
         }
     }

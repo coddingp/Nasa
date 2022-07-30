@@ -19,6 +19,8 @@ object Utils {
     var endDate: String = ""
     var radioSource: String = "https://www.nasa.gov/multimedia/nasatv/index.html#public"
     var scienceRadioSource: String = "https://onlineradiobox.com/search?cs=us.scifioldtime&played=1&q=science"
+    const val RADIO_ID = "21X5lGlDOfg"
+    const val EARTH_ID = "86YLFOog4GM"
     var started: Boolean = false
     var prepared: Boolean = false
     const val APOD_END_POINT = "planetary/apod"

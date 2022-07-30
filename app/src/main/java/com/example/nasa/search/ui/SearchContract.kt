@@ -15,6 +15,6 @@ interface SearchContract : BaseFragmentContract {
 
     interface Presenter : MvpPresenter<View> {
         fun refresh()
-        fun getSearchDataToDb(page: Int)
+        fun getSearchData(page: Int)
     }
 }

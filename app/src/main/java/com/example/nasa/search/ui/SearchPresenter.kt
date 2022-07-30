@@ -19,7 +19,7 @@ class SearchPresenter(
         presenterScope.launch {
             try {
                 view?.showRefreshing(isRefreshing = true)
-                getSearchDataToDb(1)
+                getSearchData(1)
             } catch (e: Exception) {
                 view?.failure(e)
             } finally {
@@ -28,7 +28,7 @@ class SearchPresenter(
         }
     }
 
-    override fun getSearchDataToDb(page: Int) {
+    override fun getSearchData(page: Int) {
         presenterScope.launch {
             try {
                 val data = interactor.getSearchData(page)
